@@ -1083,7 +1083,7 @@ class ETW:
         '''
         et.ControlTraceW(et.TRACEHANDLE(0),
                          self.session_name,
-                         trace_properties.get(),
+                         trace_properties,
                          et.EVENT_TRACE_CONTROL_UPDATE)
 
     def control_stop(self, trace_properties):
